@@ -1,7 +1,10 @@
 const container = document.querySelector('div');
-for (let i = 0; i < 16 * 16; i++) {
+const gridSize = prompt('enter the size');
+for (let i = 0; i < gridSize * gridSize; i++) {
   const gridDiv = document.createElement('div');
   container.appendChild(gridDiv);
+  gridDiv.style.height = 960 / gridSize + 'px';
+  gridDiv.style.width = 960 / gridSize + 'px';
   gridDiv.setAttribute('class', 'grids');
 }
 
