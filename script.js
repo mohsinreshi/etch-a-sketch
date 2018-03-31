@@ -7,6 +7,7 @@ for (let i = 0; i < 16 * 16; i++) {
   gridDiv.style.height = 550 / 16 + 'px';
   gridDiv.style.width = 550 / 16 + 'px';
   gridDiv.classList.add('grids');
+  gridDiv.style.backgroundColor = 'white';
 }
 
 const buttons = document.querySelectorAll('.color');
@@ -35,13 +36,14 @@ resolutionButton.onclick = function() {
   do {
     pixelSize = prompt('Enter the pixel size (between 1 and 128px): ');
   } while (pixelSize <= 0 || pixelSize > 128);
-  
+
   for (let i = 0; i < pixelSize * pixelSize; i++) {
     const gridDiv = document.createElement('div');
     container.appendChild(gridDiv);
     gridDiv.style.height = 550 / pixelSize + 'px';
     gridDiv.style.width = 550 / pixelSize + 'px';
     gridDiv.classList.add('grids');
+    gridDiv.style.backgroundColor = 'white';
   }
 }
 
