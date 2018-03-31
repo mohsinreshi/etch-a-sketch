@@ -1,17 +1,88 @@
+html {
+  background-image: url('images/background.PNG');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .container {
   height: 550px;
   width: 550px;
   display: flex;
   flex-wrap: wrap;
-  background-color: grey;
   margin: 0 auto;
   position: relative;
   top: 50px;
+  border: 6px solid #0000006e;
+  box-shadow: 6px 5px 2px #8080806b;
 }
 
 .container div {
   padding: 0;
   margin: 0;
-  height: 60px;
-  width: 60px;
+}
+
+button {
+  border: 1px solid #afa8a84f;
+  border-radius: 5px;
+  background-color: #e2e2e2;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  height: 50px;
+  width: 150px;
+  margin: 20px 20px;
+  display: inline-block;
+  box-shadow: 3px 3px 2px #8080806b;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  transition: all .07s ease;
+  transform: scale(1.1);
+}
+
+.left {
+  position: relative;
+  display: inline-block;
+  top: -300px;
+}
+
+.right {
+  position: relative;
+  display: inline-block;
+  top: -300px;
+}
+
+.black {
+  position: relative;
+  display: inline-block;
+  left: 250px;
+}
+
+.blue {
+  position: relative;
+  display: inline-block;
+  top: 100px;
+  left: 56px;
+}
+
+.green {
+  position: relative;
+  display: inline-block;
+  right: -1000px;
+}
+
+.rainbow {
+  position: relative;
+  display: inline-block;
+  right: -807px;
+  top: 100px;
+}
+
+.bottom button {
+  position: relative;
+  left: 670px;
 }
